@@ -1,26 +1,32 @@
-$u: 'utils'
-$li: 'libraries'
-$b: 'base'
-$la: 'layouts'
-$c: 'components'
-$v: 'views'
-$s: 'state'
+
 
 //Utils
-@import '#{$u}/colors'
-@import '#{$u}/fonts'
-@import '#{$u}/mixins'
+@import 'utils/colors'
+@import 'utils/fonts'
+@import 'utils/mixins'
+
+
 //Libraries
-@import '#{$li}/neutron'
+@import 'libraries/neutron/neutron'
+
+
 //Base
-@import '#{$b}/'
+@import 'base/normalize'
+
+
 //Layuts
-@import '#{$la}/header'
-@import '#{$la}/navbar'
-@import '#{$la}/footer'
+@import 'layouts/header'
+@import 'layouts/navbar'
+@import 'layouts/footer'
+
+
 //Components
-@import '#{$c}/form'
+@import 'components/form'
+
+
 //Views
-@import '#{$v}/index'
+@import 'views/index'
+
+
 //State
-@import '#{$s}/'
+@import 'state/'

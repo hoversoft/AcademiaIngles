@@ -14,9 +14,10 @@ var images = "./images/";
 //TAREAS
 gulp.task('jade', function () {
   pump([
-    gulp.src(['!./views/templates', 'views/*.jade']),
+    gulp.src('views/*.jade'),
     jade(),
-    gulp.dest(public)
+    gulp.dest(public),
+    bs.stream()
   ])
 });
 
